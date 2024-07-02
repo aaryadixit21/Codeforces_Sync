@@ -1,0 +1,35 @@
+{
+  "name": "codeforces_sync",
+  "description": "Codeforces submission notifications in vscode",
+  "version": "0.0.1",
+  "publisher": "aaryadixit21",
+  "repository": "https://github.com/aaryadixit21/",
+  "engines": {
+    "vscode": "^1.74.0"
+  },
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "main": "./extension.js",
+  "contributes": {
+    "configuration": {
+      "title": "Codeforces Notify",
+      "properties": {
+        "codeforces-notify.handle": {
+          "type": "string",
+          "default": "",
+          "description": "Codeforces user handle"
+        }
+      }
+    }
+  },
+  "scripts": {},
+  "devDependencies": {
+    "@types/vscode": "^1.73.0"
+  },
+  "dependencies": {
+    "axios": "^1.7.2",
+    "modules": "^0.4.0",
+    "node": "^20.15.0"
+  }
+}
